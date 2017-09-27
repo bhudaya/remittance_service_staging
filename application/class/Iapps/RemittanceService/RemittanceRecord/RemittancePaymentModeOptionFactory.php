@@ -10,6 +10,8 @@ use Iapps\RemittanceService\RemittanceRecord\Mode\GPLPaymentModeOption;
 use Iapps\RemittanceService\RemittanceTransaction\RemittanceTransaction;
 use Iapps\RemittanceService\RemittanceRecord\Mode\TMoneyPaymentModeOption;
 use Iapps\RemittanceService\RemittanceRecord\Mode\BNIPaymentModeOption;
+use Iapps\RemittanceService\RemittanceRecord\Mode\TransferToPaymentModeOption;
+
 
 
 
