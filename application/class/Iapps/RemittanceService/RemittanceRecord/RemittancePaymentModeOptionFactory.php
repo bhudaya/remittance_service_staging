@@ -21,6 +21,7 @@ class RemittancePaymentModeOptionFactory{
     const BANK_TRANSFER_GPL = 'BT8';
     const TMONEY_PAYMENT_CODE = 'BT7';
     const BNI_PAYMENT_CODE = 'BT9';
+    const TRANSFERTO_PAYMENT_CODE = 'TT1';
 
 
 
@@ -38,6 +39,9 @@ class RemittancePaymentModeOptionFactory{
                 break;
             case self::BNI_PAYMENT_CODE:
                 self::$_instance = new BNIPaymentModeOption($transaction, $sender_id, $recipient_id);
+                break;
+            case self::TRANSFERTO_PAYMENT_CODE:
+                self::$_instance = new TransferToPaymentModeOption($transaction, $sender_id, $recipient_id);
                 break;
             default:
                 self::$_instance = new DefaultPaymentModeOption($transaction, $sender_id, $recipient_id);
