@@ -13,7 +13,7 @@ use Iapps\RemittanceService\Common\MessageCode;
 
 
 
-class TransferToPaymentModeOption implements RemittancePaymentModeOptionInterface{
+class TransferToCashPickupPaymentModeOption implements RemittancePaymentModeOptionInterface{
 
     protected $_accountService;
 

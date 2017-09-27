@@ -122,6 +122,10 @@ class PaymentRequestChangedListener extends BroadcastEventConsumer{
         $this->listen('payment.request.changed', 'BT7', 'remittance.queue.paymentRequestChanged');
         $this->listen('payment.request.changed', 'BT9', 'remittance.queue.paymentRequestChanged');
         $this->listen('payment.request.changed', 'TT1', 'remittance.queue.paymentRequestChanged');
+        $this->listen('payment.request.changed', 'TT3', 'remittance.queue.paymentRequestChanged');
+        $this->listen('payment.request.changed', 'CP2', 'remittance.queue.paymentRequestChanged');
+
+
 
 
 

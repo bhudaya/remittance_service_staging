@@ -13,7 +13,7 @@ use Iapps\RemittanceService\Common\MessageCode;
 
 
 
-class TransferToPaymentModeOption implements RemittancePaymentModeOptionInterface{
+class TransferToPaymentModeOption3 implements RemittancePaymentModeOptionInterface{
 
     protected $_accountService;
 
@@ -123,13 +123,7 @@ class TransferToPaymentModeOption implements RemittancePaymentModeOptionInterfac
 
     public function getFormattedResponseMessage($response)
     {
-        $response_arr = json_decode($response, true);
-
-        if(isset($response_arr['transferto_response'])) {
-            $response_arr = json_decode($response_arr['transferto_response'], true);
-            $response_arr['remarks'] = isset($response_arr["status_message"] ) ? $response_arr["status_message"]  : '';
-        }
-        return $response_arr;
+        return $response;
     }
 
     protected function _getRecipient($recipient_id)
